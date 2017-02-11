@@ -97,4 +97,15 @@ vagrant@vagrant:~$ webhook -hooks hooks.json -verbose
 [webhook] 2017/02/09 18:24:04 finished handling notificate-to-chatwork
 ```
 
+# 参考情報
+
+## GitLabで取得できるパラメータの情報
+
+https://docs.gitlab.com/ce/user/project/integrations/webhooks.html
+
+## adnanh/webhookのJSON記法
+
+https://github.com/adnanh/webhook/wiki/Hook-Examples
+
+
 以上
