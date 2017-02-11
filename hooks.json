@@ -1,0 +1,49 @@
+[
+    {
+	"id": "notificate-to-chatwork",
+	"execute-command": "/home/vagrant/Gitlab2Chatwork/hook2chatwork.py",
+	"command-working-directory": "/home/vagrant/Gitlab2Chatwork/webhook",
+	"pass-arguments-to-command": [
+	    {
+		"source": "payload",
+		"name": "object_kind"
+	    },
+	    {
+		"source": "payload",
+		"name": "object_attributes.url"
+	    },
+	    {
+		"source": "payload",
+		"name": "object_attributes.state"
+	    },
+	    {
+		"source": "payload",
+		"name": "user.name"
+	    },
+	    {
+		"source": "payload",
+		"name": "project.name"
+	    },
+	    {
+		"source": "payload",
+		"name": "repository.name"
+	    },
+	    {
+		"source": "payload",
+		"name": "project.path_with_namespace"
+	    },
+	    {
+		"source": "payload",
+		"name": "commits.message"
+	    },
+	    {
+		"source": "payload",
+		"name": "object_attributes.title"
+	    },
+	    {
+		"source": "payload",
+		"name": "issue.title"
+	    }
+	]
+    }
+]
