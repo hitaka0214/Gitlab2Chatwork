@@ -33,9 +33,9 @@ https://github.com/adnanh/webhook
 
 Gitlabから叩かれる用の簡易Webサーバを立てられる。
 
-webhookの設定ファイルをJSON形式で作成。
-webhookから起動されるスクリプトを作成。
-``hook2chatwork.py``
+* webhookの設定ファイルをJSON形式で作成。
+* webhookから起動されるスクリプトを作成。
+  ``hook2chatwork.py``
 
 ## Pythonの環境をインストール (Python 2.7.12想定)
 
@@ -49,6 +49,10 @@ Installing collected packages: requests
 Successfully installed requests
 You are using pip version 8.1.1, however version 9.0.1 is available.
 You should consider upgrading via the 'pip install --upgrade pip' command.
+```
+
+```
+pip install requests
 ```
 
 ## Gitlabのwebhookで取得できるパラメータ
