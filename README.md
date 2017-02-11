@@ -74,8 +74,11 @@ vagrant@vagrant:~$ webhook -hooks hooks.json -verbose
 ## GitlabでWebhook設定
 
 該当ProjectのIntegrationsメニューを開く。
+
+```
  URL：http://localhost:9000/hooks/notificate-to-chatwork
  Trigger：Push events，Comments，Issue events, Merge Request eventsにチェック
+```
 
  webhookが叩かれるとパラメータを受け取りながら，スクリプトが呼ばれていることがわかる。
 
